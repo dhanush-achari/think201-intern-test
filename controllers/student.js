@@ -68,20 +68,20 @@ console.log(fields)
 
 }
 
-// // const updateRoute =(req,res)=>{
-//     Student.findByIdAndUpdate(
-//      {_id: req.body._id},
-//       req.body,
-//       {new:true},
-//       (err,student)=>{
-//           if(!err){
-//               res.redirect('api/list')
-//           }
-//           else 
-//               res.send("Error while updating")
-//       }
-//     )
-// }
+ const updateRoute =(req,res)=>{
+    Student.findByIdAndUpdate(
+     {_id: req.body._id},
+      req.body,
+      {new:true},
+      (err,student)=>{
+          if(!err){
+              res.redirect('api/list')
+          }
+          else 
+              res.send("Error while updating")
+      }
+    )
+}
 
 
 
